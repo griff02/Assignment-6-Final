@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Module 6 Demonstration</title>
+<link rel="stylesheet" type="text/css" href="styles/Assignment6.css" />
+<script src="js/Assignment6.js"></script>
+
+
+
+<body>
+<h1>Module 6</h1>
+<hr>
+    <select onchange="MenuChoice();" id="menu">
+            <option>Choose an option</option>
+            <option>Create Customer</option>
+            <option>Change Address</option>
+            <option>Delete Customer</option>
+    </select>
+
+    <section id="section1" class="display1">
+        <h2>Creating Customer</h2>
+        <hr>
+        <br>
+        <label>Please Enter a Customer ID: </label>
+        <input type="text" id="custid">
+        <label class="attention"> The customer ID should be 5 uppercase text characters.</label>
+        <br>
+        <label>Please enter the Customer Name: </label>
+        <input type="text" id="custname">
+        <br>
+        <label>Please enter the Customer's City:</label>
+        <input type="text" id="custcity">
+        <br>
+        <button onclick="CreateCustomer();" id="newcust">Add a New Customer</button>
+        <br>
+        <hr>
+        <br>
+        <label id="result">The operation's result will display here.</label
+    </section>
+    
+        
+    <section id="section2" class="display2">
+        <h2>Change Customer Ship Address</h2>
+        <hr>
+        <br>
+        <label>Please Enter the Order Number: </label>
+        <input type="text" id="custorder#">
+        <br>
+        <label>Please enter the Ship to Name: </label>
+        <input type="text" id="custshipname">
+        <br>
+        <label>Please enter the Customer's Ship to Address:</label>
+        <input type="text" id="custshipadd">
+        <br>
+        <label>Please enter the Customer's Ship to City:</label>
+        <input type="text" id="custshipcity">
+        <br>
+        <label>Please enter the Customer's Ship to Postal Code:</label>
+        <input type="text" id="custshipzip">
+        <br>
+        <button onclick="UpdateOrderAddress();" id="updateadd">Update Customer's Order Address</button>
+        <br>
+        <hr>
+        <br>
+        <label id="result2">The operation's result will display here.</label
+    </section>
+    
+    
+    <section id="section3" class="display3">
+        <h2>Delete Customer</h2>
+        <hr>
+        <br>
+        <label>Please Enter a Customer ID: </label>
+        <input type="text" id="deletecustid">
+        <label class="attention2"> The customer ID should be 5 uppercase text characters, and must exist in the database.</label>
+        <br>
+        <button onclick="DeleteCustomer();" id="deletecust">Delete Existing Customer from Database:</button>
+        <br>
+        <hr>
+        <br>
+        <label id="result3">The operation's result will display here.</label
+    </section>
+</body>
+
+</html>

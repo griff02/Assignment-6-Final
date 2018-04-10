@@ -1,0 +1,8 @@
+.attention {font-style: italic; color: red}
+.attention2 {font-style: italic; color: red}
+#section1 {background-color: #ccf2ff; visibility: hidden;}
+#section2 {background-color: #ffccfe; visibility: hidden;}
+#section3 {background-color: #17ea8b; visibility: hidden;}
+#section1 {position: fixed; top:150px;border:solid; width: 600px}
+#section3 {position: fixed; top:150px;border:solid; width: 600px}
+#section2 {position: fixed; top:150px;border: solid; width: 600px}
